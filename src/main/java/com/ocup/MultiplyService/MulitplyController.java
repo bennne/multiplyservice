@@ -21,7 +21,7 @@ public class MulitplyController {
 		double result = 0;
 		for (double i = 0; i < val1; i++) {
 			result = restTemplate
-					.getForObject("http://summe-summe.apps.ca-central-1.starter.openshift-online.com/sum?val1=" + result
+					.getForObject("http://sum-calculator.apps.ca-central-1.starter.openshift-online.com/sum?val1=" + result
 							+ "&val2=" + val2 + "", Double.class);
 //			result = restTemplate.getForObject("http://localhost:8080/sum?val1=" + result + "&val2=" + val2 + "",
 //					Double.class);
