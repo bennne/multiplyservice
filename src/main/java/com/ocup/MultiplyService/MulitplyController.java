@@ -13,7 +13,7 @@ public class MulitplyController {
 	private String sumServiceUrl;
 	
 	@RequestMapping("/multiply")
-	public Double sum(@RequestParam(value = "val1", defaultValue = "0") double val1,
+	public String sum(@RequestParam(value = "val1", defaultValue = "0") double val1,
 			@RequestParam(value = "val2", defaultValue = "0") double val2) {
 		System.out.println("MULTIPLY: " + val1 + " * " + val2);
 
@@ -28,6 +28,6 @@ public class MulitplyController {
 			result = sumResult;
 		}
 		System.out.println("MULTIPLY RESULT: " + result);
-		return result;
+		return result + " Test1";
 	}
 }
